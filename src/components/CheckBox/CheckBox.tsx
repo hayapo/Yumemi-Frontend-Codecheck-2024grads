@@ -7,8 +7,8 @@ type Props = React.ComponentProps<"input"> & {
 /* チェックボックスコンポーネント */
 export const CheckBox: React.FC<Props> = ({ label, ...props }) => {
   return (
-    <label>
-      <input type="checkbox" className={style.checkbox} {...props} />
+    <label className={style.checkboxContainer}>
+      <input type="checkbox" {...props} />
       <span>{label}</span>
     </label>
   )

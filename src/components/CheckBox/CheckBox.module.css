@@ -1,3 +1,4 @@
-.checkbox {
+.checkboxContainer {
+  display: flex;
   cursor: pointer;
 }
