@@ -1,0 +1,13 @@
+/* 都道府県チェックボックスセクションのスタイル */
+.section_title {
+  text-align: left;
+}
+
+/* 都道府県選択チェックボックスのスタイル */
+.prefecture_checkbox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 3fr));
+  gap: 0.1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
