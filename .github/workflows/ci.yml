@@ -18,10 +18,13 @@ jobs:
       - name: Clone Repository
         uses: actions/checkout@v2
       - name: Install Dependencies
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          version: 7.28.0
         run: |
           echo "Running Installing Dependencies ..."
-          pnpm install
-      - name: Run Linting
+          pnpm i --frozen-lockfile
+      - name: Run Lint Test
         run: |
           echo "Running Linting tests ..."
           yarn run lint
