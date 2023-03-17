@@ -1,0 +1,29 @@
+name: ci
+on:
+  push:
+    branches:
+      - "feature/**"
+      - "hotfix/**"
+
+  pull_request:
+    branches:
+      - "develop"
+      - "main"
+
+jobs:
+  lintTest:
+    name: Lint Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: |
+          echo "Running Installing Dependencies ..."
+          pnpm install
+      - name: Run Linting
+        run: |
+          echo "Running Linting tests ..."
+          yarn run lint
+        env:
+          CI: true
