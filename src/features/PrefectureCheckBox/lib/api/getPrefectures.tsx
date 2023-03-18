@@ -1,4 +1,4 @@
-import { Prefecture, PrefectureResponse } from "@/types/apiResponses"
+import { Prefecture, PrefectureResponse } from "@/types"
 import { AxiosOption } from "@/lib/api/axiosOption"
 import axios, { AxiosResponse } from "axios"
 

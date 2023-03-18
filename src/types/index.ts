@@ -9,3 +9,8 @@ export type PrefectureResponse = {
   message: string | null
   result: Prefecture[]
 }
+
+/* チェックボックスで選択した都道府県の型 */
+export type CheckPrefecture = Prefecture & {
+  checked: boolean
+}

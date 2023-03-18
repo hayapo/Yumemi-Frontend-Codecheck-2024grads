@@ -1,1 +1,1 @@
-export { PrefectureCheckBox } from "./components/PrefectureCheckBox"
+export { default as PrefectureCheckBox } from "./components/PrefectureCheckBox"
