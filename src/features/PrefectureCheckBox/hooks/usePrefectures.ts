@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { getPrefectures } from "../lib/api/getPrefectures"
-import { Prefecture } from "@/types/apiResponses"
+import { Prefecture } from "@/types"
 
 /**
  * 都道府県一覧を扱うカスタムフック
