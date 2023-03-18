@@ -23,5 +23,3 @@ dist-ssr
 *.sw?
 
 *.env
-
-__snapshots__/
