@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import { getPrefectures } from "../api/getPrefectures"
 import { Prefecture } from "@/types"
 
@@ -8,19 +8,22 @@ import { Prefecture } from "@/types"
  */
 export const usePrefectures = () => {
   const [prefectures, setPrefectures] = useState<Prefecture[]>([])
-  let ingnore = false
+  const isMountedRef = useRef<boolean>(true)
   useEffect(() => {
-    const f = async () => {
-      const prefData = await getPrefectures()
-      setPrefectures(prefData)
+    const fetchAndSetPrefectures = async () => {
+      try {
+        const prefData = await getPrefectures()
+
+        setPrefectures(prefData)
+      } catch (error: unknown) {
+        if (isMountedRef.current && error instanceof Error) console.error(error)
+      }
     }
-    try {
-      if (!ingnore) f()
-    } catch (error: unknown) {
-      if (error instanceof Error) throw new Error(error.message)
-    }
+
+    if (isMountedRef.current) fetchAndSetPrefectures()
+
     return () => {
-      ingnore = true
+      isMountedRef.current = false
     }
   }, [])
   return prefectures

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import { PrefecturePopulation } from "@/types"
 import { useGetPopulations } from "../api"
 import { useCheckedPrefecture } from "../hooks"
@@ -13,10 +13,10 @@ export const usePopulations = () => {
   const [prefecuturePopulations, setPrefecturePopulations] = useState<PrefecturePopulation[]>([])
   const checkedPrefectures = useCheckedPrefecture()
   const getPopulations = useGetPopulations()
-  let ingnore = false
+  const isMountedRef = useRef<boolean>(true)
 
   useEffect(() => {
-    const fetchPopulation = async () => {
+    const fetchAndSetPopulations = async () => {
       try {
         const data = await Promise.all(
           checkedPrefectures.map(async (pref) => {
@@ -24,16 +24,19 @@ export const usePopulations = () => {
             return { ...pref, populations: populations }
           })
         )
-        setPrefecturePopulations(data)
+
+        if (isMountedRef.current) setPrefecturePopulations(data)
       } catch (error: unknown) {
-        if (error instanceof Error) console.error(error.message)
+        if (isMountedRef.current && error instanceof Error) {
+          console.error(error.message)
+        }
       }
     }
 
-    if (!ingnore) fetchPopulation()
+    fetchAndSetPopulations()
 
     return () => {
-      ingnore = true
+      isMountedRef.current = false
     }
   }, [checkedPrefectures])
 
