@@ -11,6 +11,6 @@ export type PrefectureResponse = {
 }
 
 /* チェックボックスで選択した都道府県の型 */
-export type CheckPrefecture = Prefecture & {
+export type PrefecturesWithChecked = Prefecture & {
   checked: boolean
 }
