@@ -1,7 +1,7 @@
 import React from "react"
 import { CheckBox } from "@/components"
 import style from "./PrefectureCheckBox.module.css"
-import { usePrefectureCheck } from "../hooks"
+import { usePrefectureCheck } from "../lib/hooks"
 import { usePrefectureWithCheckedContext } from "@/contexts"
 
 /**
