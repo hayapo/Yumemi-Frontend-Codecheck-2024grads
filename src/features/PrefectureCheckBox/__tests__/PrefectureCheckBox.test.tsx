@@ -4,8 +4,9 @@ import { render, screen } from "@testing-library/react"
 import { CheckBox } from "@/components"
 import { mockPrefecturesData } from "@/mocks/mockPrefecturesData"
 import { default as PrefectureCheckBox } from "../components/PrefectureCheckBox"
+import { PrefecturesWithCheckedProvider } from "@/contexts"
 
-test("should render correctly", () => {
+test("should render <CheckBox ./> correctly", () => {
   mockPrefecturesData.map(({ prefCode, prefName }) => {
     const { container } = render(<CheckBox key={prefCode} label={prefName} id={`pref_${prefCode}`} />)
     expect(container.firstChild).toMatchSnapshot()
@@ -19,12 +20,20 @@ test("label is render correctly", () => {
   })
 })
 
-test("should render correctly", () => {
-  const { container } = render(<PrefectureCheckBox />)
+test("should render <PrefectureCheckBox /> correctly", () => {
+  const { container } = render(
+    <PrefecturesWithCheckedProvider>
+      <PrefectureCheckBox />
+    </PrefecturesWithCheckedProvider>
+  )
   expect(container.firstChild).toMatchSnapshot()
 })
 
 test("title is visible", () => {
-  render(<PrefectureCheckBox />)
+  render(
+    <PrefecturesWithCheckedProvider>
+      <PrefectureCheckBox />
+    </PrefecturesWithCheckedProvider>
+  )
   expect(screen.getByText("都道府県")).toBeInTheDocument()
 })

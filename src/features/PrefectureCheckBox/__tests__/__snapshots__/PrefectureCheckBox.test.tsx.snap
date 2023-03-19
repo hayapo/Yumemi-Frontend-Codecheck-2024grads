@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`should render correctly 1`] = `
+exports[`should render <CheckBox ./> correctly 1`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -14,7 +14,7 @@ exports[`should render correctly 1`] = `
 </label>
 `;
 
-exports[`should render correctly 2`] = `
+exports[`should render <CheckBox ./> correctly 2`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -28,7 +28,7 @@ exports[`should render correctly 2`] = `
 </label>
 `;
 
-exports[`should render correctly 3`] = `
+exports[`should render <CheckBox ./> correctly 3`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -42,7 +42,7 @@ exports[`should render correctly 3`] = `
 </label>
 `;
 
-exports[`should render correctly 4`] = `
+exports[`should render <CheckBox ./> correctly 4`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -56,7 +56,7 @@ exports[`should render correctly 4`] = `
 </label>
 `;
 
-exports[`should render correctly 5`] = `
+exports[`should render <CheckBox ./> correctly 5`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -70,7 +70,7 @@ exports[`should render correctly 5`] = `
 </label>
 `;
 
-exports[`should render correctly 6`] = `
+exports[`should render <CheckBox ./> correctly 6`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -84,7 +84,7 @@ exports[`should render correctly 6`] = `
 </label>
 `;
 
-exports[`should render correctly 7`] = `
+exports[`should render <CheckBox ./> correctly 7`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -98,7 +98,7 @@ exports[`should render correctly 7`] = `
 </label>
 `;
 
-exports[`should render correctly 8`] = `
+exports[`should render <CheckBox ./> correctly 8`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -112,7 +112,7 @@ exports[`should render correctly 8`] = `
 </label>
 `;
 
-exports[`should render correctly 9`] = `
+exports[`should render <CheckBox ./> correctly 9`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -126,7 +126,7 @@ exports[`should render correctly 9`] = `
 </label>
 `;
 
-exports[`should render correctly 10`] = `
+exports[`should render <CheckBox ./> correctly 10`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -140,7 +140,7 @@ exports[`should render correctly 10`] = `
 </label>
 `;
 
-exports[`should render correctly 11`] = `
+exports[`should render <CheckBox ./> correctly 11`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -154,7 +154,7 @@ exports[`should render correctly 11`] = `
 </label>
 `;
 
-exports[`should render correctly 12`] = `
+exports[`should render <CheckBox ./> correctly 12`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -168,7 +168,7 @@ exports[`should render correctly 12`] = `
 </label>
 `;
 
-exports[`should render correctly 13`] = `
+exports[`should render <CheckBox ./> correctly 13`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -182,7 +182,7 @@ exports[`should render correctly 13`] = `
 </label>
 `;
 
-exports[`should render correctly 14`] = `
+exports[`should render <CheckBox ./> correctly 14`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -196,7 +196,7 @@ exports[`should render correctly 14`] = `
 </label>
 `;
 
-exports[`should render correctly 15`] = `
+exports[`should render <CheckBox ./> correctly 15`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -210,7 +210,7 @@ exports[`should render correctly 15`] = `
 </label>
 `;
 
-exports[`should render correctly 16`] = `
+exports[`should render <CheckBox ./> correctly 16`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -224,7 +224,7 @@ exports[`should render correctly 16`] = `
 </label>
 `;
 
-exports[`should render correctly 17`] = `
+exports[`should render <CheckBox ./> correctly 17`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -238,7 +238,7 @@ exports[`should render correctly 17`] = `
 </label>
 `;
 
-exports[`should render correctly 18`] = `
+exports[`should render <CheckBox ./> correctly 18`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -252,7 +252,7 @@ exports[`should render correctly 18`] = `
 </label>
 `;
 
-exports[`should render correctly 19`] = `
+exports[`should render <CheckBox ./> correctly 19`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -266,7 +266,7 @@ exports[`should render correctly 19`] = `
 </label>
 `;
 
-exports[`should render correctly 20`] = `
+exports[`should render <CheckBox ./> correctly 20`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -280,7 +280,7 @@ exports[`should render correctly 20`] = `
 </label>
 `;
 
-exports[`should render correctly 21`] = `
+exports[`should render <CheckBox ./> correctly 21`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -294,7 +294,7 @@ exports[`should render correctly 21`] = `
 </label>
 `;
 
-exports[`should render correctly 22`] = `
+exports[`should render <CheckBox ./> correctly 22`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -308,7 +308,7 @@ exports[`should render correctly 22`] = `
 </label>
 `;
 
-exports[`should render correctly 23`] = `
+exports[`should render <CheckBox ./> correctly 23`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -322,7 +322,7 @@ exports[`should render correctly 23`] = `
 </label>
 `;
 
-exports[`should render correctly 24`] = `
+exports[`should render <CheckBox ./> correctly 24`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -336,7 +336,7 @@ exports[`should render correctly 24`] = `
 </label>
 `;
 
-exports[`should render correctly 25`] = `
+exports[`should render <CheckBox ./> correctly 25`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -350,7 +350,7 @@ exports[`should render correctly 25`] = `
 </label>
 `;
 
-exports[`should render correctly 26`] = `
+exports[`should render <CheckBox ./> correctly 26`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -364,7 +364,7 @@ exports[`should render correctly 26`] = `
 </label>
 `;
 
-exports[`should render correctly 27`] = `
+exports[`should render <CheckBox ./> correctly 27`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -378,7 +378,7 @@ exports[`should render correctly 27`] = `
 </label>
 `;
 
-exports[`should render correctly 28`] = `
+exports[`should render <CheckBox ./> correctly 28`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -392,7 +392,7 @@ exports[`should render correctly 28`] = `
 </label>
 `;
 
-exports[`should render correctly 29`] = `
+exports[`should render <CheckBox ./> correctly 29`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -406,7 +406,7 @@ exports[`should render correctly 29`] = `
 </label>
 `;
 
-exports[`should render correctly 30`] = `
+exports[`should render <CheckBox ./> correctly 30`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -420,7 +420,7 @@ exports[`should render correctly 30`] = `
 </label>
 `;
 
-exports[`should render correctly 31`] = `
+exports[`should render <CheckBox ./> correctly 31`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -434,7 +434,7 @@ exports[`should render correctly 31`] = `
 </label>
 `;
 
-exports[`should render correctly 32`] = `
+exports[`should render <CheckBox ./> correctly 32`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -448,7 +448,7 @@ exports[`should render correctly 32`] = `
 </label>
 `;
 
-exports[`should render correctly 33`] = `
+exports[`should render <CheckBox ./> correctly 33`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -462,7 +462,7 @@ exports[`should render correctly 33`] = `
 </label>
 `;
 
-exports[`should render correctly 34`] = `
+exports[`should render <CheckBox ./> correctly 34`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -476,7 +476,7 @@ exports[`should render correctly 34`] = `
 </label>
 `;
 
-exports[`should render correctly 35`] = `
+exports[`should render <CheckBox ./> correctly 35`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -490,7 +490,7 @@ exports[`should render correctly 35`] = `
 </label>
 `;
 
-exports[`should render correctly 36`] = `
+exports[`should render <CheckBox ./> correctly 36`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -504,7 +504,7 @@ exports[`should render correctly 36`] = `
 </label>
 `;
 
-exports[`should render correctly 37`] = `
+exports[`should render <CheckBox ./> correctly 37`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -518,7 +518,7 @@ exports[`should render correctly 37`] = `
 </label>
 `;
 
-exports[`should render correctly 38`] = `
+exports[`should render <CheckBox ./> correctly 38`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -532,7 +532,7 @@ exports[`should render correctly 38`] = `
 </label>
 `;
 
-exports[`should render correctly 39`] = `
+exports[`should render <CheckBox ./> correctly 39`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -546,7 +546,7 @@ exports[`should render correctly 39`] = `
 </label>
 `;
 
-exports[`should render correctly 40`] = `
+exports[`should render <CheckBox ./> correctly 40`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -560,7 +560,7 @@ exports[`should render correctly 40`] = `
 </label>
 `;
 
-exports[`should render correctly 41`] = `
+exports[`should render <CheckBox ./> correctly 41`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -574,7 +574,7 @@ exports[`should render correctly 41`] = `
 </label>
 `;
 
-exports[`should render correctly 42`] = `
+exports[`should render <CheckBox ./> correctly 42`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -588,7 +588,7 @@ exports[`should render correctly 42`] = `
 </label>
 `;
 
-exports[`should render correctly 43`] = `
+exports[`should render <CheckBox ./> correctly 43`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -602,7 +602,7 @@ exports[`should render correctly 43`] = `
 </label>
 `;
 
-exports[`should render correctly 44`] = `
+exports[`should render <CheckBox ./> correctly 44`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -616,7 +616,7 @@ exports[`should render correctly 44`] = `
 </label>
 `;
 
-exports[`should render correctly 45`] = `
+exports[`should render <CheckBox ./> correctly 45`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -630,7 +630,7 @@ exports[`should render correctly 45`] = `
 </label>
 `;
 
-exports[`should render correctly 46`] = `
+exports[`should render <CheckBox ./> correctly 46`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -644,7 +644,7 @@ exports[`should render correctly 46`] = `
 </label>
 `;
 
-exports[`should render correctly 47`] = `
+exports[`should render <CheckBox ./> correctly 47`] = `
 <label
   class="_checkboxContainer_e15d39"
 >
@@ -658,7 +658,7 @@ exports[`should render correctly 47`] = `
 </label>
 `;
 
-exports[`should render correctly 48`] = `
+exports[`should render <PrefectureCheckBox /> correctly 1`] = `
 <h2
   class="_section_title_99397d"
 >
