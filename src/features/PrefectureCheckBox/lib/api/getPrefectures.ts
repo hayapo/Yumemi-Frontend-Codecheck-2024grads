@@ -1,14 +1,14 @@
-import { Prefecture, PrefectureResponse } from "@/types"
-import { AxiosOption } from "@/lib/api/axiosOption"
 import axios, { AxiosResponse } from "axios"
+import { AxiosOption } from "@/lib/api/axiosOption"
+import { Prefecture, PrefectureResponse } from "@/types"
+import { PREFECTURE_API_ENDPOINT } from "@/utils/constants"
 
 /**
  * @return {Promise<PrefectureResponse[]>} Promiseでラップされた都道府県のリスト\
  * APIレスポンスに関するエラーはここでthrowする
  */
 export const getPrefectures = async (): Promise<Prefecture[]> => {
-  const endpoint = "api/v1/prefectures"
-  const option = AxiosOption(endpoint)
+  const option = AxiosOption(PREFECTURE_API_ENDPOINT)
   try {
     const response: PrefectureResponse = await axios(option).then((res: AxiosResponse<PrefectureResponse>) => res.data)
     return response.result
