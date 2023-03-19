@@ -1,0 +1,1 @@
+export { useGetPopulations } from "./getPopulation"

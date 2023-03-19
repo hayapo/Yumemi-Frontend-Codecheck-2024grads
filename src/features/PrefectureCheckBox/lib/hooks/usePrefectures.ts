@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { getPrefectures } from "../lib/api/getPrefectures"
+import { getPrefectures } from "../api/getPrefectures"
 import { Prefecture } from "@/types"
 
 /**
@@ -8,16 +8,19 @@ import { Prefecture } from "@/types"
  */
 export const usePrefectures = () => {
   const [prefectures, setPrefectures] = useState<Prefecture[]>([])
-
+  let ingnore = false
   useEffect(() => {
     const f = async () => {
       const prefData = await getPrefectures()
       setPrefectures(prefData)
     }
     try {
-      f()
+      if (!ingnore) f()
     } catch (error: unknown) {
-      if (error instanceof Error) console.log(error)
+      if (error instanceof Error) throw new Error(error.message)
+    }
+    return () => {
+      ingnore = true
     }
   }, [])
   return prefectures
