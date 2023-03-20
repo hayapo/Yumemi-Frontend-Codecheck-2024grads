@@ -1,1 +1,1 @@
-export { default as Population } from "./components/Population"
+export { default as PopulationChartSection } from "./components/Population"

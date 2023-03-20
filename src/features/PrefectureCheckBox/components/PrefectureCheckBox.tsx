@@ -24,4 +24,10 @@ const PrefectureCheckBox: React.FC = () => {
   )
 }
 
-export default React.memo(PrefectureCheckBox)
+export default React.memo(function PrefectureCheckBoxSection() {
+  return (
+    <section id="prefecture_checkbox_section">
+      <PrefectureCheckBox />
+    </section>
+  )
+})
