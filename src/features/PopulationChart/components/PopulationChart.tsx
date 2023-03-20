@@ -1,11 +1,13 @@
 import React from "react"
 import { usePopulations } from "../lib/hooks"
+import { Graph } from "./Chart"
 
 const PopulationChart = () => {
   const populations = usePopulations()
   return (
     <>
-      <h2>人口推移</h2>
+      <h2>人口構成推移</h2>
+      <Graph prefecturePopulations={populations} />
     </>
   )
 }
