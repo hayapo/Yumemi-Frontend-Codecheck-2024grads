@@ -6,10 +6,12 @@ import { PopulationChartSection } from "./features/PopulationChart"
 function App() {
   return (
     <div className="App">
-      <PrefecturesWithCheckedProvider>
-        <PrefectureCheckBoxSection />
-        <PopulationChartSection />
-      </PrefecturesWithCheckedProvider>
+      <div className="main">
+        <PrefecturesWithCheckedProvider>
+          <PrefectureCheckBoxSection />
+          <PopulationChartSection />
+        </PrefecturesWithCheckedProvider>
+      </div>
     </div>
   )
 }
