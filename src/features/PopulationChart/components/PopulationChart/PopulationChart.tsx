@@ -4,6 +4,7 @@ import { Chart } from "../Chart"
 import { SectionTitle } from "@/components/SectionTitle/SectionTitle"
 import { PopulationPerYear, PrefecturePopulation, Label } from "@/types"
 import { LabelSelect } from "../LabelSelect"
+import style from "./PopulationChart.module.css"
 
 const PopulationChart = () => {
   const [selected, setSelected] = useState<Label>("総人口")
@@ -16,11 +17,11 @@ const PopulationChart = () => {
     })
   )
   return (
-    <>
+    <div className={style.population_chart}>
       <SectionTitle title="人口構成推移" />
       <LabelSelect selected={selected} setSelected={setSelected} />
       <Chart prefecturePopulations={selectedPopulation} />
-    </>
+    </div>
   )
 }
 
