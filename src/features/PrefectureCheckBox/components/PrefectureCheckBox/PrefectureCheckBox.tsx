@@ -4,7 +4,7 @@ import { CheckBox } from "@/components"
 import { PrefectureCheckBoxAccordion } from "../PrefectureCheckBoxAccordion"
 import { usePrefectureCheck } from "../../lib/hooks"
 import { usePrefectureWithCheckedContext } from "@/contexts"
-import { SectionTitle } from "@/components/SectionTitle/SectionTitle"
+import { SectionTitle } from "@/components"
 import style from "./PrefectureCheckBox.module.css"
 
 /**

@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import { usePopulations } from "../../lib/hooks"
 import { Chart } from "../Chart"
-import { SectionTitle } from "@/components/SectionTitle/SectionTitle"
+import { SectionTitle } from "@/components"
 import { PopulationPerYear, PrefecturePopulation, Label } from "@/types"
 import { LabelSelect } from "../LabelSelect"
 import style from "./PopulationChart.module.css"
