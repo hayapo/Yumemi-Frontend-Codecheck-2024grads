@@ -11,13 +11,3 @@
   flex-wrap: wrap;
   align-items: center;
 }
-
-@media screen and (max-width: 700px) {
-  .prefecture_checkboxes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(80px, 2fr));
-    gap: 0.1rem;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-}

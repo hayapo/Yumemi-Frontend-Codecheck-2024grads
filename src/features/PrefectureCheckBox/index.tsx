@@ -1,1 +1,1 @@
-export { default as PrefectureCheckBoxSection } from "./components/PrefectureCheckBox"
+export { default as PrefectureCheckBoxSection } from "./components/PrefectureCheckBox/PrefectureCheckBox"

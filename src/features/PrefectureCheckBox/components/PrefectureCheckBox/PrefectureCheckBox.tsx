@@ -1,6 +1,8 @@
 import React from "react"
+import { isMobile } from "react-device-detect"
 import { CheckBox } from "@/components"
-import { usePrefectureCheck } from "../lib/hooks"
+import { PrefectureCheckBoxAccordion } from "../PrefectureCheckBoxAccordion"
+import { usePrefectureCheck } from "../../lib/hooks"
 import { usePrefectureWithCheckedContext } from "@/contexts"
 import { SectionTitle } from "@/components/SectionTitle/SectionTitle"
 import style from "./PrefectureCheckBox.module.css"
@@ -13,21 +15,26 @@ import style from "./PrefectureCheckBox.module.css"
 const PrefectureCheckBox: React.FC = () => {
   const toggleCheck = usePrefectureCheck()
   const { prefectureWithChecked } = usePrefectureWithCheckedContext()
+
   return (
     <>
       <div className={style.prefecture_checkbox_container}>
         <SectionTitle title="都道府県" />
-        <div className={style.prefecture_checkboxes}>
-          {prefectureWithChecked.map(({ prefCode, prefName, checked }) => (
-            <CheckBox
-              label={prefName}
-              checked={checked}
-              id={`pref_${prefCode}`}
-              key={prefCode}
-              onChange={() => toggleCheck(prefCode)}
-            />
-          ))}
-        </div>
+        {isMobile ? (
+          <PrefectureCheckBoxAccordion prefectureWithChecked={prefectureWithChecked} toggleCheck={toggleCheck} />
+        ) : (
+          <div className={style.prefecture_checkboxes}>
+            {prefectureWithChecked.map(({ prefCode, prefName, checked }) => (
+              <CheckBox
+                label={prefName}
+                checked={checked}
+                id={`pref_${prefCode}`}
+                key={prefCode}
+                onChange={() => toggleCheck(prefCode)}
+              />
+            ))}
+          </div>
+        )}
       </div>
     </>
   )

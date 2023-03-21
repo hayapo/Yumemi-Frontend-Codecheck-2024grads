@@ -1,0 +1,21 @@
+.prefecture_checkbox_accordion_detail {
+  text-align: left;
+  cursor: pointer;
+}
+
+.prefecture_checkbox_accordion_summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: underline var(--select-background);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 4px;
+}
+
+.prefecture_checkbox_accordion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 2fr));
+  gap: 0.1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+  align-items: center;
+}

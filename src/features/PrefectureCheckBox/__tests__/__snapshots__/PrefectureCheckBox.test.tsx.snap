@@ -663,7 +663,7 @@ exports[`should render <PrefectureCheckBox /> correctly 1`] = `
   id="prefecture_checkbox_section"
 >
   <div
-    class="_prefecture_checkbox_container_99397d"
+    class="_prefecture_checkbox_container_c10966"
   >
     <h2
       class="_section_title_63ff4a"
@@ -671,7 +671,7 @@ exports[`should render <PrefectureCheckBox /> correctly 1`] = `
       都道府県
     </h2>
     <div
-      class="_prefecture_checkboxes_99397d"
+      class="_prefecture_checkboxes_c10966"
     />
   </div>
 </section>
