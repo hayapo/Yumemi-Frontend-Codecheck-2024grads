@@ -8,7 +8,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  --elementSelected: #c6c6c6;
+  --selected-background: #e3f1ff;
+  --select-background: #a6cef7;
 }
 
 a {
