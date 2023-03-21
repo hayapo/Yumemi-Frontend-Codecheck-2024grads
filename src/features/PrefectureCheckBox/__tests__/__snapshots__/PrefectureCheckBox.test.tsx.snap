@@ -663,7 +663,7 @@ exports[`should render <PrefectureCheckBox /> correctly 1`] = `
   id="prefecture_checkbox_section"
 >
   <h2
-    class="_section_title_99397d"
+    class="_section_title_63ff4a"
   >
     都道府県
   </h2>

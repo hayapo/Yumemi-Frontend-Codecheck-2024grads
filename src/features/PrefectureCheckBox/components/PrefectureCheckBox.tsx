@@ -1,8 +1,9 @@
 import React from "react"
 import { CheckBox } from "@/components"
-import style from "./PrefectureCheckBox.module.css"
 import { usePrefectureCheck } from "../lib/hooks"
 import { usePrefectureWithCheckedContext } from "@/contexts"
+import { SectionTitle } from "@/components/SectionTitle/SectionTitle"
+import style from "./PrefectureCheckBox.module.css"
 
 /**
  * 都道府県のチェックボックスコンポーネント \
@@ -14,7 +15,7 @@ const PrefectureCheckBox: React.FC = () => {
   const { prefectureWithChecked } = usePrefectureWithCheckedContext()
   return (
     <>
-      <h2 className={style.section_title}>都道府県</h2>
+      <SectionTitle title="都道府県" />
       <div className={style.prefecture_checkbox}>
         {prefectureWithChecked.map(({ prefCode, prefName }) => (
           <CheckBox label={prefName} id={`pref_${prefCode}`} key={prefCode} onChange={() => toggleCheck(prefCode)} />
