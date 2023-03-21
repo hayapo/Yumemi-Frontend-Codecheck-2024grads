@@ -2,3 +2,17 @@
   display: flex;
   cursor: pointer;
 }
+
+.checkboxContainer:hover {
+  background-color: #c6c6c6;
+}
+
+.checkboxContainerChecked {
+  display: flex;
+  cursor: pointer;
+  background-color: #c6c6c6;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}

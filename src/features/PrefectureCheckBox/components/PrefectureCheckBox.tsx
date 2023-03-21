@@ -17,8 +17,14 @@ const PrefectureCheckBox: React.FC = () => {
     <>
       <SectionTitle title="都道府県" />
       <div className={style.prefecture_checkbox}>
-        {prefectureWithChecked.map(({ prefCode, prefName }) => (
-          <CheckBox label={prefName} id={`pref_${prefCode}`} key={prefCode} onChange={() => toggleCheck(prefCode)} />
+        {prefectureWithChecked.map(({ prefCode, prefName, checked }) => (
+          <CheckBox
+            label={prefName}
+            checked={checked}
+            id={`pref_${prefCode}`}
+            key={prefCode}
+            onChange={() => toggleCheck(prefCode)}
+          />
         ))}
       </div>
     </>
