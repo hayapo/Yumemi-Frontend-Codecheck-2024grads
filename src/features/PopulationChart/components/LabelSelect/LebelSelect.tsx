@@ -20,12 +20,12 @@ export const LabelSelect: React.FC<Props> = ({ selected, setSelected }) => {
 
   return (
     <>
-      <div className={style.labelSelectContainer}>
+      <div className={style.label_select_container}>
         {radioButtons.map((radio) => {
           return (
             <label
               key={radio.value}
-              className={radio.value === selected ? style.radioButtonSelected : style.radioButton}
+              className={radio.value === selected ? style.radio_button_selected : style.radio_button}
             >
               <input
                 type="radio"
