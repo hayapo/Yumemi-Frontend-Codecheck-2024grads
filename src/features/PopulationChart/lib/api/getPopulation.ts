@@ -1,7 +1,7 @@
 import axios, { AxiosResponse } from "axios"
 import { useRef, useCallback } from "react"
 import { AxiosOption } from "@/lib/api/axiosOption"
-import { PopulationPerYear, PopulationResponse } from "@/types"
+import { PopulationData, PopulationResponse } from "@/types"
 import { POPULATION_API_ENDPOINT } from "@/utils/constants"
 
 /**
@@ -11,10 +11,10 @@ import { POPULATION_API_ENDPOINT } from "@/utils/constants"
  */
 export const useGetPopulations = () => {
   // キャッシュを格納するuseRefフック
-  const cache = useRef<Record<number, PopulationPerYear[]>>({})
+  const cache = useRef<Record<number, PopulationData[]>>({})
 
   // 都道府県コードに基づいて人口データを取得する非同期関数
-  const getPopulations = useCallback(async (prefCode: number): Promise<PopulationPerYear[]> => {
+  const getPopulations = useCallback(async (prefCode: number): Promise<PopulationData[]> => {
     // キャッシュにヒットした場合はキャッシュを返す
     if (cache.current[prefCode]) return cache.current[prefCode]
 
@@ -23,12 +23,10 @@ export const useGetPopulations = () => {
     try {
       const populationResponse: AxiosResponse<PopulationResponse> = await axios(option)
 
-      const population = populationResponse.data.result.data.find((data) => data.label === "総人口")
-
-      if (!population) throw new Error("総人口データがありません")
+      const populations = populationResponse.data.result.data
 
       // キャッシュに追加し、キャッシュからreturnする
-      cache.current[prefCode] = population.data
+      cache.current[prefCode] = populations
       return cache.current[prefCode]
     } catch (error) {
       console.error(`getPopulation Error: ${error}`)
