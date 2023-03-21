@@ -4,6 +4,22 @@ import { visualizer } from "rollup-plugin-visualizer"
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  build: {
+    assetsInlineLimit: 0,
+    cssCodeSplit: true,
+    cssTarget: "chrome110",
+    minify: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ["react", "react-dom"],
+        },
+        experimentalMinChunkSize: 40960,
+      },
+    },
+    sourcemap: false,
+    target: "chrome110",
+  },
   plugins: [
     react(),
     visualizer({
