@@ -1,8 +1,8 @@
 import "./App.css"
-import { PrefectureCheckBoxSection } from "./features/PrefectureCheckBox"
 import { PrefecturesWithCheckedProvider } from "./contexts"
-import { PopulationChartSection } from "./features/PopulationChart"
-import { Header } from "./components/Header/Header"
+import { default as PrefectureCheckBoxSection } from "./features/PrefectureCheckBox"
+import { default as PopulationChartSection } from "./features/PopulationChart"
+import { Header } from "./features/Header"
 
 function App() {
   return (

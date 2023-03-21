@@ -6,7 +6,7 @@ import { PopulationPerYear, PrefecturePopulation, Label } from "@/types"
 import { LabelSelect } from "../LabelSelect"
 import style from "./PopulationChart.module.css"
 
-const PopulationChart = () => {
+export const PopulationChart = () => {
   const [selected, setSelected] = useState<Label>("総人口")
   const populations = usePopulations()
   const selectedPopulation = populations.map(
@@ -24,11 +24,3 @@ const PopulationChart = () => {
     </div>
   )
 }
-
-export default React.memo(function PopulationChartSection() {
-  return (
-    <section id="population_chart_section">
-      <PopulationChart />
-    </section>
-  )
-})

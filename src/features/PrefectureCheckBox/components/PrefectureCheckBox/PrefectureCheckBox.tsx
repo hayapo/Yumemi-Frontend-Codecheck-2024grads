@@ -1,8 +1,8 @@
 import React from "react"
 import { isMobile } from "react-device-detect"
 import { CheckBox } from "@/components"
-import { PrefectureCheckBoxAccordion } from "../PrefectureCheckBoxAccordion"
-import { usePrefectureCheck } from "../../lib/hooks"
+import { PrefectureCheckBoxAccordion } from "../PrefectureCheckBoxAccordion/PrefectureCheckBoxAccordion"
+import { usePrefectureCheck } from "../../hooks"
 import { usePrefectureWithCheckedContext } from "@/contexts"
 import { SectionTitle } from "@/components"
 import style from "./PrefectureCheckBox.module.css"
@@ -12,7 +12,7 @@ import style from "./PrefectureCheckBox.module.css"
  * usePrefectures()で取得した都道府県一覧を使用する
  * @returns {React.FC<{}>}
  */
-const PrefectureCheckBox: React.FC = () => {
+export const PrefectureCheckBox: React.FC = () => {
   const toggleCheck = usePrefectureCheck()
   const { prefectureWithChecked } = usePrefectureWithCheckedContext()
 
@@ -39,11 +39,3 @@ const PrefectureCheckBox: React.FC = () => {
     </>
   )
 }
-
-export default React.memo(function PrefectureCheckBoxSection() {
-  return (
-    <section id="prefecture_checkbox_section">
-      <PrefectureCheckBox />
-    </section>
-  )
-})

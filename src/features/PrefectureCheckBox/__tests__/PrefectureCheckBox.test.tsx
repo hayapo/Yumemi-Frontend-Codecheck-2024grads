@@ -3,7 +3,7 @@ import "@testing-library/jest-dom"
 import { render, screen } from "@testing-library/react"
 import { CheckBox } from "@/components"
 import { mockPrefecturesData } from "@/mocks/mockPrefecturesData"
-import { default as PrefectureCheckBoxSection } from "../components/PrefectureCheckBox/PrefectureCheckBox"
+import { default as PrefectureCheckBoxSection } from "../../PrefectureCheckBox"
 import { PrefecturesWithCheckedProvider } from "@/contexts"
 
 test("should render <CheckBox ./> correctly", () => {

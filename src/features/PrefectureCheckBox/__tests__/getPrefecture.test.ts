@@ -1,6 +1,6 @@
 import { setupServer } from "msw/node"
 import { handlers } from "@/mocks/handler"
-import { getPrefectures } from "../lib/api/getPrefectures"
+import { getPrefectures } from "../api/getPrefectures"
 import { rest } from "msw"
 
 export const server = setupServer(...handlers)
