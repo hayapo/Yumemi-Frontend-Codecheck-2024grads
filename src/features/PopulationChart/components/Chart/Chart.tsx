@@ -2,14 +2,14 @@ import { useMemo } from "react"
 import * as Highcharts from "highcharts"
 import HighchartsReact from "highcharts-react-official"
 import { PrefecturePopulation } from "@/types"
-import { HIGHCHARTS_OPTION } from "../utils/higchartsOption"
+import { HIGHCHARTS_OPTION } from "../../utils/higchartsOption"
 
 type Props = {
   prefecturePopulations: PrefecturePopulation[]
 }
 
 /* HightChartsグラフを返すコンポーネント */
-export const Graph: React.FC<Props> = ({ prefecturePopulations }) => {
+export const Chart: React.FC<Props> = ({ prefecturePopulations }) => {
   const series = useMemo(() => {
     if (prefecturePopulations.length === 0) {
       return [{ data: [], showInLegend: false }]

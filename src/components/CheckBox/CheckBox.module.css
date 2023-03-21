@@ -4,13 +4,13 @@
 }
 
 .checkboxContainer:hover {
-  background-color: #c6c6c6;
+  background-color: var(--elementSelected);
 }
 
 .checkboxContainerChecked {
   display: flex;
   cursor: pointer;
-  background-color: #c6c6c6;
+  background-color: var(--elementSelected);
 }
 
 input[type="checkbox"] {
