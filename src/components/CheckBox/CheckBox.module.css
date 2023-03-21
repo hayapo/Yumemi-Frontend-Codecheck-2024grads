@@ -1,4 +1,9 @@
-.checkboxContainer {
+.checkboxContainer,
+input[type="checkbox"] {
   display: flex;
   cursor: pointer;
+}
+
+.checkboxContainer:hover {
+  background-color: #c6c6c6;
 }
