@@ -1,13 +1,13 @@
 import React from "react"
 import { usePopulations } from "../lib/hooks"
 import { Graph } from "./Chart"
-import style from "./PopulationChart.module.css"
+import { SectionTitle } from "@/components/SectionTitle/SectionTitle"
 
 const PopulationChart = () => {
   const populations = usePopulations()
   return (
     <>
-      <h2 className={style.section_title}>人口構成推移</h2>
+      <SectionTitle title="人口構成推移" />
       <Graph prefecturePopulations={populations} />
     </>
   )
