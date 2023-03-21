@@ -1,0 +1,4 @@
+.population_chart {
+  display: grid;
+  grid-row-gap: 0.5rem;
+}

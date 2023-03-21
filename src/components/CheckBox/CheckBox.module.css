@@ -1,16 +1,16 @@
-.checkboxContainer {
+.checkbox_container {
   display: flex;
   cursor: pointer;
 }
 
-.checkboxContainer:hover {
-  background-color: var(--elementSelected);
+.checkbox_container:hover {
+  background-color: var(--selected-background);
 }
 
-.checkboxContainerChecked {
+.checkbox_checked {
   display: flex;
   cursor: pointer;
-  background-color: var(--elementSelected);
+  background-color: var(--selected-background);
 }
 
 input[type="checkbox"] {

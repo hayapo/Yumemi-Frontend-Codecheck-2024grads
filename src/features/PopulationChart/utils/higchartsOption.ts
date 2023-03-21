@@ -7,6 +7,7 @@ export const MIN_YEAR = MAX_YEAR - 30
 /* HightChartsのOption */
 export const HIGHCHARTS_OPTION: Highcharts.Options = {
   chart: {
+    height: 500,
     style: {
       fontSize: "12px",
     },
@@ -38,6 +39,30 @@ export const HIGHCHARTS_OPTION: Highcharts.Options = {
   accessibility: {
     enabled: false,
   },
+  tooltip: {
+    useHTML: true,
+    formatter() {
+      return `
+      <div style="font-size: 15px; font-weight: bold;">
+        ${this.series.name}
+      </div>
+      <div>
+        ${this.x}年
+      </div>
+      <div>
+        <span style="
+        font-size: 15px;
+        font-weight: bold;
+        color: ${this.color as string};">
+          ${this.y?.toLocaleString()}
+        </span>
+        <span>人</span>
+      </div>
+      `
+    },
+    shape: "square",
+    backgroundColor: "#fff",
+  },
   legend: {
     layout: "vertical",
     align: "right",
@@ -50,5 +75,34 @@ export const HIGHCHARTS_OPTION: Highcharts.Options = {
       fontWeight: "bold",
     },
     itemMarginBottom: 4,
+  },
+  responsive: {
+    rules: [
+      {
+        condition: {
+          maxWidth: 700,
+        },
+        chartOptions: {
+          chart: {
+            height: 300,
+          },
+          legend: {
+            layout: "horizontal",
+            align: "center",
+            verticalAlign: "bottom",
+          },
+          yAxis: {
+            title: {
+              text: "総人口（万人）",
+            },
+            labels: {
+              formatter() {
+                return `${(this.value as number) / 10000}`
+              },
+            },
+          },
+        },
+      },
+    ],
   },
 }
