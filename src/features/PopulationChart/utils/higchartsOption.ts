@@ -1,8 +1,8 @@
 import * as Highcharts from "highcharts"
 
 /* 総人口推移グラフの横軸(年)の最大値と最小値 */
-export const CURRENT_YEAR = new Date().getFullYear()
-export const OLDEST_YEAR = CURRENT_YEAR - 30
+export const MAX_YEAR = new Date().getFullYear()
+export const MIN_YEAR = MAX_YEAR - 30
 
 /* HightChartsのOption */
 export const HIGHCHARTS_OPTION: Highcharts.Options = {
@@ -21,10 +21,18 @@ export const HIGHCHARTS_OPTION: Highcharts.Options = {
     title: {
       text: "年",
     },
+    tickInterval: 5,
+    max: MAX_YEAR,
+    min: MIN_YEAR,
   },
   yAxis: {
     title: {
-      text: "人口数",
+      text: "総人口（人）",
+    },
+    labels: {
+      formatter() {
+        return `${this.value.toLocaleString()}`
+      },
     },
   },
   accessibility: {
