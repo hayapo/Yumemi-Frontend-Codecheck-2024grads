@@ -3,7 +3,7 @@ import "@testing-library/jest-dom"
 import { render, screen } from "@testing-library/react"
 import { CheckBox } from "@/components"
 import { mockPrefecturesData } from "@/mocks/mockPrefecturesData"
-import { default as PrefectureCheckBox } from "../components/PrefectureCheckBox"
+import { default as PrefectureCheckBoxSection } from "../components/PrefectureCheckBox"
 import { PrefecturesWithCheckedProvider } from "@/contexts"
 
 test("should render <CheckBox ./> correctly", () => {
@@ -23,7 +23,7 @@ test("label is render correctly", () => {
 test("should render <PrefectureCheckBox /> correctly", () => {
   const { container } = render(
     <PrefecturesWithCheckedProvider>
-      <PrefectureCheckBox />
+      <PrefectureCheckBoxSection />
     </PrefecturesWithCheckedProvider>
   )
   expect(container.firstChild).toMatchSnapshot()
@@ -32,7 +32,7 @@ test("should render <PrefectureCheckBox /> correctly", () => {
 test("title is visible", () => {
   render(
     <PrefecturesWithCheckedProvider>
-      <PrefectureCheckBox />
+      <PrefectureCheckBoxSection />
     </PrefecturesWithCheckedProvider>
   )
   expect(screen.getByText("都道府県")).toBeInTheDocument()
