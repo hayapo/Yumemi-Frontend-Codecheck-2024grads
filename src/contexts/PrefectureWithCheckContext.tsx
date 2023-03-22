@@ -1,26 +1,26 @@
 import { useState, createContext, ReactNode, SetStateAction, useContext } from "react"
-import type { PrefecturesWithChecked } from "@/types"
+import type { PrefectureWithChecked } from "@/types"
 
 type Props = {
   children: ReactNode
 }
 
 export type PrefectureWithCheckedContextType = {
-  prefectureWithChecked: PrefecturesWithChecked[]
-  setPrefectureWithChecked: React.Dispatch<SetStateAction<PrefecturesWithChecked[]>>
+  prefecturesWithChecked: PrefectureWithChecked[]
+  setPrefecturesWithChecked: React.Dispatch<SetStateAction<PrefectureWithChecked[]>>
 }
 
-const PrefectureWithCheckedContext = createContext<PrefectureWithCheckedContextType>(
+const PrefecturesWithCheckedContext = createContext<PrefectureWithCheckedContextType>(
   {} as PrefectureWithCheckedContextType
 )
 
-export const usePrefectureWithCheckedContext = () => useContext(PrefectureWithCheckedContext)
+export const usePrefecturesWithCheckedContext = () => useContext(PrefecturesWithCheckedContext)
 
 export const PrefecturesWithCheckedProvider: React.FC<Props> = ({ children }) => {
-  const [prefectureWithChecked, setPrefectureWithChecked] = useState<PrefecturesWithChecked[]>([])
+  const [prefecturesWithChecked, setPrefecturesWithChecked] = useState<PrefectureWithChecked[]>([])
   return (
-    <PrefectureWithCheckedContext.Provider value={{ prefectureWithChecked, setPrefectureWithChecked }}>
+    <PrefecturesWithCheckedContext.Provider value={{ prefecturesWithChecked, setPrefecturesWithChecked }}>
       {children}
-    </PrefectureWithCheckedContext.Provider>
+    </PrefecturesWithCheckedContext.Provider>
   )
 }

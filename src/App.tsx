@@ -1,8 +1,7 @@
 import { Suspense, lazy } from "react"
-import "./App.css"
 import { PrefecturesWithCheckedProvider } from "./contexts"
-import { Header } from "./features/Header"
-import { Fallback } from "./components"
+import { Header, Fallback } from "./components"
+import "./App.css"
 
 const PrefectureCheckBoxSection = lazy(() => import("./features/PrefectureCheckBox"))
 const PopulationChartSection = lazy(() => import("./features/PopulationChart"))

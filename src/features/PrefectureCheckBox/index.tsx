@@ -1,10 +1,12 @@
-import React from "react"
-import { PrefectureCheckBox } from "./components/PrefectureCheckBox/PrefectureCheckBox"
+import { memo } from "react"
+import { PrefectureCheckBoxContainer } from "./components/PrefectureCheckBoxContaner"
 
-export default React.memo(function PrefectureCheckBoxSection() {
+export default memo(function PrefectureCheckBoxSection() {
   return (
-    <section id="prefecture_checkbox_section">
-      <PrefectureCheckBox />
-    </section>
+    <>
+      <section id="prefecture_checkbox_section">
+        <PrefectureCheckBoxContainer />
+      </section>
+    </>
   )
 })

@@ -1,6 +1,6 @@
-import { PrefecturesWithChecked } from "@/types"
+import { PrefectureWithChecked } from "@/types"
 
-export const mockPrefecturesData: PrefecturesWithChecked[] = [
+export const mockPrefecturesData: PrefectureWithChecked[] = [
   {
     prefCode: 1,
     prefName: "北海道",

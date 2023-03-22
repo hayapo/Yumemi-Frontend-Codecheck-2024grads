@@ -1,15 +1,15 @@
 import { useMemo } from "react"
-import { PrefecturesWithChecked } from "@/types"
-import { usePrefectureWithCheckedContext } from "@/contexts"
+import { PrefectureWithChecked } from "@/types"
+import { usePrefecturesWithCheckedContext } from "@/contexts"
 
 /**
  * checkされた都道府県を返すメモ化されたカスタムフック。
- * @returns {PrefecturesWithChecked[]} `checkedPrefectures`
+ * @returns {PrefectureWithChecked[]} `checkedPrefectures`
  */
-export const useCheckedPrefecture = (): PrefecturesWithChecked[] => {
-  const { prefectureWithChecked } = usePrefectureWithCheckedContext()
+export const useCheckedPrefecture = (): PrefectureWithChecked[] => {
+  const { prefecturesWithChecked } = usePrefecturesWithCheckedContext()
   const checkedPrefectures = useMemo(() => {
-    return prefectureWithChecked.filter((pref) => pref.checked)
-  }, [prefectureWithChecked])
+    return prefecturesWithChecked.filter((pref) => pref.checked)
+  }, [prefecturesWithChecked])
   return checkedPrefectures
 }

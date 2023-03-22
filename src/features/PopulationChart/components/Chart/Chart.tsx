@@ -9,7 +9,7 @@ type Props = {
 }
 
 /* HightChartsグラフを返すコンポーネント */
-export const Chart: React.FC<Props> = ({ prefecturePopulations }) => {
+const Chart: React.FC<Props> = ({ prefecturePopulations }) => {
   const series = useMemo(() => {
     if (prefecturePopulations.length === 0) {
       return [{ data: [], showInLegend: false }]
@@ -30,3 +30,5 @@ export const Chart: React.FC<Props> = ({ prefecturePopulations }) => {
     <HighchartsReact highcharts={Highcharts} constructorType={"chart"} options={{ ...HIGHCHARTS_OPTION, series }} />
   )
 }
+
+export default Chart
