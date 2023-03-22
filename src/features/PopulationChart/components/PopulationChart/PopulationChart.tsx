@@ -1,10 +1,11 @@
-import React, { useState } from "react"
+import { Suspense, useState, lazy } from "react"
 import { usePopulations } from "../../lib/hooks"
-import { Chart } from "../Chart"
-import { SectionTitle } from "@/components"
+import { Fallback, SectionTitle } from "@/components"
 import { PopulationPerYear, PrefecturePopulation, Label } from "@/types"
 import { LabelSelect } from "../LabelSelect"
 import style from "./PopulationChart.module.css"
+
+const Chart = lazy(() => import("../Chart/Chart"))
 
 export const PopulationChart = () => {
   const [selected, setSelected] = useState<Label>("総人口")
@@ -20,7 +21,9 @@ export const PopulationChart = () => {
     <div className={style.population_chart}>
       <SectionTitle title="人口構成推移" />
       <LabelSelect selected={selected} setSelected={setSelected} />
-      <Chart prefecturePopulations={selectedPopulation} />
+      <Suspense fallback={<Fallback />}>
+        <Chart prefecturePopulations={selectedPopulation} />
+      </Suspense>
     </div>
   )
 }

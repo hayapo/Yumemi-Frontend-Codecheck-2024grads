@@ -1,8 +1,10 @@
-import "./App.css"
+import { Suspense, lazy } from "react"
 import { PrefecturesWithCheckedProvider } from "./contexts"
-import { default as PrefectureCheckBoxSection } from "./features/PrefectureCheckBox"
-import { default as PopulationChartSection } from "./features/PopulationChart"
-import { Header } from "./features/Header"
+import { Header, Fallback } from "./components"
+import "./App.css"
+
+const PrefectureCheckBoxSection = lazy(() => import("./features/PrefectureCheckBox"))
+const PopulationChartSection = lazy(() => import("./features/PopulationChart"))
 
 function App() {
   return (
@@ -10,8 +12,10 @@ function App() {
       <Header />
       <div className="main">
         <PrefecturesWithCheckedProvider>
-          <PrefectureCheckBoxSection />
-          <PopulationChartSection />
+          <Suspense fallback={<Fallback />}>
+            <PrefectureCheckBoxSection />
+            <PopulationChartSection />
+          </Suspense>
         </PrefecturesWithCheckedProvider>
       </div>
     </div>

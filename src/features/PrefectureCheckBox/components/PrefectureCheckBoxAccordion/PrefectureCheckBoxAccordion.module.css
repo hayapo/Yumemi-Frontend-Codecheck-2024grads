@@ -1,3 +1,8 @@
+.prefecture_checkbox_accordion_container {
+  display: grid;
+  grid-row-gap: 1rem;
+}
+
 .prefecture_checkbox_accordion_detail {
   text-align: left;
   cursor: pointer;
