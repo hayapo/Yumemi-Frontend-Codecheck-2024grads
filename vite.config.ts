@@ -1,11 +1,12 @@
-import { defineConfig } from "vite"
+import { defineConfig, splitVendorChunkPlugin } from "vite"
 import react from "@vitejs/plugin-react-swc"
 import { visualizer } from "rollup-plugin-visualizer"
+import gzipPlugin from "rollup-plugin-gzip"
 
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
-    assetsInlineLimit: 0,
+    assetsInlineLimit: 20480,
     cssCodeSplit: true,
     cssTarget: "chrome110",
     minify: true,
@@ -17,7 +18,7 @@ export default defineConfig({
         experimentalMinChunkSize: 40960,
       },
     },
-    sourcemap: false,
+    sourcemap: true,
     target: "chrome110",
   },
   plugins: [
@@ -28,6 +29,8 @@ export default defineConfig({
       gzipSize: true,
       brotliSize: true,
     }),
+    splitVendorChunkPlugin(),
+    gzipPlugin({ fileName: ".gz" }),
   ],
   resolve: {
     alias: {
