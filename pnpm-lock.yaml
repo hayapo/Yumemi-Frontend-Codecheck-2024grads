@@ -21,6 +21,8 @@ specifiers:
   react: ^18.2.0
   react-device-detect: ^2.2.3
   react-dom: ^18.2.0
+  rollup: ^3.20.0
+  rollup-plugin-gzip: ^3.1.0
   rollup-plugin-visualizer: ^5.9.0
   typescript: ^4.9.3
   vite: ^4.1.4
@@ -33,6 +35,7 @@ dependencies:
   react: 18.2.0
   react-device-detect: 2.2.3_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
+  rollup: 3.20.0
 
 devDependencies:
   '@testing-library/jest-dom': 5.16.5
@@ -49,7 +52,8 @@ devDependencies:
   jsdom: 21.1.1
   msw: 1.1.0_typescript@4.9.5
   prettier: 2.8.4
-  rollup-plugin-visualizer: 5.9.0
+  rollup-plugin-gzip: 3.1.0_rollup@3.20.0
+  rollup-plugin-visualizer: 5.9.0_rollup@3.20.0
   typescript: 4.9.5
   vite: 4.1.4
   vitest: 0.29.2_z3y4fq4qsrc24bzs6xwkfju2cy
@@ -1839,7 +1843,6 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
-    dev: true
     optional: true
 
   /function-bind/1.1.1:
@@ -3090,7 +3093,16 @@ packages:
       glob: 7.2.3
     dev: true
 
-  /rollup-plugin-visualizer/5.9.0:
+  /rollup-plugin-gzip/3.1.0_rollup@3.20.0:
+    resolution: {integrity: sha512-PFS9s6/w6dCra6/Z8PGD+ug3aaaqKLDCbr5y1Ek71Wd4rQSmMnOqCIIMgwbYxZ9A/gjP3pCN6rA4pAG47jxF0w==}
+    engines: {node: '>=10.0.0'}
+    peerDependencies:
+      rollup: '>=2.0.0'
+    dependencies:
+      rollup: 3.20.0
+    dev: true
+
+  /rollup-plugin-visualizer/5.9.0_rollup@3.20.0:
     resolution: {integrity: sha512-bbDOv47+Bw4C/cgs0czZqfm8L82xOZssk4ayZjG40y9zbXclNk7YikrZTDao6p7+HDiGxrN0b65SgZiVm9k1Cg==}
     engines: {node: '>=14'}
     hasBin: true
@@ -3102,17 +3114,17 @@ packages:
     dependencies:
       open: 8.4.2
       picomatch: 2.3.1
+      rollup: 3.20.0
       source-map: 0.7.4
       yargs: 17.7.1
     dev: true
 
-  /rollup/3.19.1:
-    resolution: {integrity: sha512-lAbrdN7neYCg/8WaoWn/ckzCtz+jr70GFfYdlf50OF7387HTg+wiuiqJRFYawwSPpqfqDNYqK7smY/ks2iAudg==}
+  /rollup/3.20.0:
+    resolution: {integrity: sha512-YsIfrk80NqUDrxrjWPXUa7PWvAfegZEXHuPsEZg58fGCdjL1I9C1i/NaG+L+27kxxwkrG/QEDEQc8s/ynXWWGQ==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
       fsevents: 2.3.2
-    dev: true
 
   /rrweb-cssom/0.6.0:
     resolution: {integrity: sha512-APM0Gt1KoXBz0iIkkdB/kfvGOwC4UuJFeG/c+yV7wSc7q96cG/kJ0HiYCnzivD9SB53cLV1MlHFNfOuPaadYSw==}
@@ -3620,7 +3632,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.19.1
+      rollup: 3.20.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -3654,7 +3666,7 @@ packages:
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
-      rollup: 3.19.1
+      rollup: 3.20.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
