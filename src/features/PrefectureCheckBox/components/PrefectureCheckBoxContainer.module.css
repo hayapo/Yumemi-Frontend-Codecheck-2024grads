@@ -1,0 +1,4 @@
+.prefecture_checkbox_container {
+  display: grid;
+  grid-row-gap: 1rem;
+}

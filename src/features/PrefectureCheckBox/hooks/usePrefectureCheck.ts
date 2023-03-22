@@ -1,22 +1,22 @@
 import { useCallback, useEffect } from "react"
-import { usePrefectureWithCheckedContext } from "@/contexts"
+import { usePrefecturesWithCheckedContext } from "@/contexts"
 import { usePrefectures } from "./usePrefectures"
 
 export const usePrefectureCheck = () => {
   const prefectures = usePrefectures()
 
-  const { setPrefectureWithChecked } = usePrefectureWithCheckedContext()
+  const { setPrefecturesWithChecked } = usePrefecturesWithCheckedContext()
   useEffect(() => {
     if (prefectures) {
-      setPrefectureWithChecked(prefectures.map((pref) => ({ ...pref, checked: false })))
+      setPrefecturesWithChecked(prefectures.map((pref) => ({ ...pref, checked: false })))
     } else {
-      setPrefectureWithChecked([])
+      setPrefecturesWithChecked([])
     }
   }, [prefectures])
 
   const toggleCheck = useCallback(
     (prefCode: number) => {
-      setPrefectureWithChecked((prevState) =>
+      setPrefecturesWithChecked((prevState) =>
         prevState.map((pref) => {
           if (pref.prefCode === prefCode) {
             return { ...pref, checked: !pref.checked }
@@ -25,7 +25,7 @@ export const usePrefectureCheck = () => {
         })
       )
     },
-    [setPrefectureWithChecked]
+    [setPrefecturesWithChecked]
   )
   return toggleCheck
 }
