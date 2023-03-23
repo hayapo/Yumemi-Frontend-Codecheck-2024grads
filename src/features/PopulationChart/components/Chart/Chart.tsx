@@ -8,13 +8,17 @@ type Props = {
   prefecturePopulations: PrefecturePopulation[]
 }
 
-/* HightChartsグラフを返すコンポーネント */
-const Chart: React.FC<Props> = ({ prefecturePopulations }) => {
+/**
+ * HightChartsグラフを返すコンポーネント
+ * @param {PrefecturePopulation[]} PrefecturePopulation[]
+ */
+export const Chart: React.FC<Props> = ({ prefecturePopulations }) => {
   const series = useMemo(() => {
     if (prefecturePopulations.length === 0) {
       return [{ data: [], showInLegend: false }]
     }
 
+    // HighChartsにわたすオブジェクトを生成する
     return prefecturePopulations.map(
       (pref): Partial<Highcharts.SeriesOptionsType> => ({
         id: `prefCode-${pref.prefCode.toString()}`,
@@ -30,5 +34,3 @@ const Chart: React.FC<Props> = ({ prefecturePopulations }) => {
     <HighchartsReact highcharts={Highcharts} constructorType={"chart"} options={{ ...HIGHCHARTS_OPTION, series }} />
   )
 }
-
-export default Chart

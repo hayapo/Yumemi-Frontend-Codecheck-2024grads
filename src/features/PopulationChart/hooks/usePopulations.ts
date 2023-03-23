@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { PrefecturePopulations } from "@/types"
 import { useGetPopulations } from "../api"
-import { useCheckedPrefecture } from "../hooks"
+import { useCheckedPrefecture } from "."
 
 /**
  * useGetPopulationsフックを使用して\
