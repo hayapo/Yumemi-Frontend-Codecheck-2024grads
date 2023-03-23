@@ -1,0 +1,9 @@
+/* 都道府県選択チェックボックスのスタイル */
+.prefecture_checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 0.1rem;
+  flex-wrap: wrap;
+  margin: 0 1rem;
+  align-items: center;
+}

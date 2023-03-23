@@ -1,0 +1,678 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should render <CheckBox ./> correctly 1`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_1"
+    type="checkbox"
+  />
+  <span>
+    北海道
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 2`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_2"
+    type="checkbox"
+  />
+  <span>
+    青森県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 3`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_3"
+    type="checkbox"
+  />
+  <span>
+    岩手県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 4`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_4"
+    type="checkbox"
+  />
+  <span>
+    宮城県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 5`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_5"
+    type="checkbox"
+  />
+  <span>
+    秋田県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 6`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_6"
+    type="checkbox"
+  />
+  <span>
+    山形県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 7`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_7"
+    type="checkbox"
+  />
+  <span>
+    福島県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 8`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_8"
+    type="checkbox"
+  />
+  <span>
+    茨城県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 9`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_9"
+    type="checkbox"
+  />
+  <span>
+    栃木県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 10`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_10"
+    type="checkbox"
+  />
+  <span>
+    群馬県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 11`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_11"
+    type="checkbox"
+  />
+  <span>
+    埼玉県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 12`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_12"
+    type="checkbox"
+  />
+  <span>
+    千葉県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 13`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_13"
+    type="checkbox"
+  />
+  <span>
+    東京都
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 14`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_14"
+    type="checkbox"
+  />
+  <span>
+    神奈川県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 15`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_15"
+    type="checkbox"
+  />
+  <span>
+    新潟県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 16`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_16"
+    type="checkbox"
+  />
+  <span>
+    富山県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 17`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_17"
+    type="checkbox"
+  />
+  <span>
+    石川県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 18`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_18"
+    type="checkbox"
+  />
+  <span>
+    福井県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 19`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_19"
+    type="checkbox"
+  />
+  <span>
+    山梨県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 20`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_20"
+    type="checkbox"
+  />
+  <span>
+    長野県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 21`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_21"
+    type="checkbox"
+  />
+  <span>
+    岐阜県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 22`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_22"
+    type="checkbox"
+  />
+  <span>
+    静岡県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 23`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_23"
+    type="checkbox"
+  />
+  <span>
+    愛知県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 24`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_24"
+    type="checkbox"
+  />
+  <span>
+    三重県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 25`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_25"
+    type="checkbox"
+  />
+  <span>
+    滋賀県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 26`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_26"
+    type="checkbox"
+  />
+  <span>
+    京都府
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 27`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_27"
+    type="checkbox"
+  />
+  <span>
+    大阪府
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 28`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_28"
+    type="checkbox"
+  />
+  <span>
+    兵庫県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 29`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_29"
+    type="checkbox"
+  />
+  <span>
+    奈良県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 30`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_30"
+    type="checkbox"
+  />
+  <span>
+    和歌山県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 31`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_31"
+    type="checkbox"
+  />
+  <span>
+    鳥取県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 32`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_32"
+    type="checkbox"
+  />
+  <span>
+    島根県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 33`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_33"
+    type="checkbox"
+  />
+  <span>
+    岡山県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 34`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_34"
+    type="checkbox"
+  />
+  <span>
+    広島県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 35`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_35"
+    type="checkbox"
+  />
+  <span>
+    山口県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 36`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_36"
+    type="checkbox"
+  />
+  <span>
+    徳島県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 37`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_37"
+    type="checkbox"
+  />
+  <span>
+    香川県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 38`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_38"
+    type="checkbox"
+  />
+  <span>
+    愛媛県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 39`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_39"
+    type="checkbox"
+  />
+  <span>
+    高知県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 40`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_40"
+    type="checkbox"
+  />
+  <span>
+    福岡県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 41`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_41"
+    type="checkbox"
+  />
+  <span>
+    佐賀県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 42`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_42"
+    type="checkbox"
+  />
+  <span>
+    長崎県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 43`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_43"
+    type="checkbox"
+  />
+  <span>
+    熊本県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 44`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_44"
+    type="checkbox"
+  />
+  <span>
+    大分県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 45`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_45"
+    type="checkbox"
+  />
+  <span>
+    宮崎県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 46`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_46"
+    type="checkbox"
+  />
+  <span>
+    鹿児島県
+  </span>
+</label>
+`;
+
+exports[`should render <CheckBox ./> correctly 47`] = `
+<label
+  class="_checkbox_container_e15d39"
+>
+  <input
+    id="pref_47"
+    type="checkbox"
+  />
+  <span>
+    沖縄県
+  </span>
+</label>
+`;
+
+exports[`should render <PrefectureCheckBox /> correctly 1`] = `
+<section
+  id="prefecture_checkbox_section"
+>
+  <div
+    class="_prefecture_checkbox_container_c41fbc"
+  >
+    <h2
+      class="_section_title_63ff4a"
+    >
+      都道府県
+    </h2>
+    <div>
+      Loading ...
+    </div>
+  </div>
+</section>
+`;
