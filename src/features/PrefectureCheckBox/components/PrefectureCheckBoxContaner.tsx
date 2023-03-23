@@ -6,9 +6,14 @@ import { Fallback, SectionTitle } from "@/components"
 
 import style from "./PrefectureCheckBoxContainer.module.css"
 
+// CheckBoxコンポーネントをDynamic Import
 const PrefectureCheckBox = lazy(() => import("./PrefectureCheckBox"))
 const PrefectureCheckBoxAccordion = lazy(() => import("./PrefectureCheckBoxAccordion"))
 
+/**
+ * 都道府県チェックボックスコンポーネントを集めたコンテナー \
+ * `isMobile`でスマホかデスクかの判定をしてコンポーネントを出し分けている
+ */
 export const PrefectureCheckBoxContainer = () => {
   const toggleCheck = usePrefectureCheck()
   const { prefecturesWithChecked } = usePrefecturesWithCheckedContext()

@@ -11,6 +11,8 @@ type Props = {
 /**
  * 都道府県のチェックボックスコンポーネント \
  * usePrefectures()で取得した都道府県一覧を使用する
+ * @param {PrefectureWithChecked[]} prefecturesWithChecked
+ * @param {function toggleCheck(prafCode: number) return void} toggleCheck
  * @returns {React.FC<{}>}
  */
 const PrefectureCheckBox: React.FC<Props> = ({ prefecturesWithChecked, toggleCheck }) => {

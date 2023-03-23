@@ -9,8 +9,8 @@ type Props = {
 
 /**
  * アコーディオン型の都道府県選択チェックボックスコンポーネント
- * @param {PrefectureWithChecked[]} 都道府県一覧
- * @param {function name(prafCode: number) return void}
+ * @param {PrefectureWithChecked[]} prefecturesWithChecked
+ * @param {function toggleCheck(prafCode: number) return void} toggleCheck
  */
 const PrefectureCheckBoxAccordion: React.FC<Props> = ({ prefecturesWithChecked, toggleCheck }) => {
   return (
