@@ -11,6 +11,12 @@ export const HIGHCHARTS_OPTION: Highcharts.Options = {
     style: {
       fontSize: "12px",
     },
+    events: {
+      load() {
+        this.showLoading()
+        setTimeout(this.hideLoading.bind(this), 500)
+      },
+    },
   },
   lang: {
     noData: "都道府県を選択してください",
